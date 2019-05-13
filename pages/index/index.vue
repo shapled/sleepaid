@@ -37,6 +37,7 @@
 			}
 		},
 		onLoad() {
+			wx.setInnerAudioOption({obeyMuteSwitch: false});  // iOS 下设置不遵循静音设置
 		},
 		onHide() {
 			if(this.playing) {
